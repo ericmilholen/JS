@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <p>Enter a number and we will display the cube!</p>
+    <input type="text" id="number">
+    <br>
+    <br>
+    
+    <input type="button" value="enter" onclick="getCube()">
+</body>
+</html>
+
+<script>
+    function getCube() {
+        let number = document.getElementById("number").value
+
+        let returnThis = Math.pow(number, 3)
+        
+        console.log('RETURN:', returnThis)
+
+        document.getElementById("output").innerHTML = returnThis
+    }
+</script>
+
+<script src="./myScript.js"></script>
